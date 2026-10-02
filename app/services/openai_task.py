@@ -79,7 +79,7 @@ async def dashboard_generate_response_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant on TelepracticePro, a telehealth platform for healthcare professionals.
+            You are a helpful assistant on  telehealth platform for healthcare professionals.
             Your role is to assist Admins in navigating to the dashboard.
             Based on their query, provide a short, friendly message guiding them to the main dashboard.
             Clearly confirm their intent and inform them that a link will be available for quick access to the dashboard.
@@ -122,7 +122,7 @@ async def generate_service_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant that summarizes services for users on TelepracticePro, 
+            You are a helpful assistant that summarizes services for users on a telehealth platform, 
             a telehealth platform for healthcare professionals.
             Your task is to provide a friendly and informative write up of the services based on user query.
             Ensure your response is tailored to the user's query and context.
@@ -167,7 +167,7 @@ async def generate_team_member_summary(
     
     return  await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant that summarizes team members for users on TelepracticePro, 
+            You are a helpful assistant that summarizes team members for users on 
             a telehealth platform for healthcare professionals.
             Your task is to provide a friendly and informative write up of the team members/staffs based on user query.
             After which you will ask the user to see more details on the main screen.
@@ -207,7 +207,7 @@ async def generate_create_team_member_summary(
     
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant that provides information on creating team members for Admins on TelepracticePro, 
+            You are a helpful assistant that provides information on creating team members for Admins on 
             a telehealth platform for healthcare professionals.
             Your task is to provide a friendly guidiance on creating a new team member based on user query
             After which you can ask the Admin to see more details on the main screen or use the link below.
@@ -247,7 +247,7 @@ async def generate_create_patient_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant on TelepracticePro, a telehealth platform for healthcare professionals.
+            You are a helpful assistant on a telehealth platform for healthcare professionals.
             Your role is to guide Admin users when they want to create or register a new patient.
             Respond to the query with a short, friendly, and informative sentence that confirms their intent 
             and directs them to the appropriate action.
@@ -287,7 +287,7 @@ async def generate_patient_search_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful assistant on TelepracticePro, a telehealth platform for healthcare professionals.
+            You are a helpful assistant on a telehealth platform for healthcare professionals.
             When an admin makes a request related to patients—such as viewing, editing, activating, or deactivating—
             respond with a concise and friendly message directing them to the Patient page.
             Let the admin know they can manage all patient-related tasks there.
@@ -326,7 +326,7 @@ async def generate_search_appointment_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to appointments—such as creating, viewing, rescheduling, or cancelling—
             respond with a short, friendly, and informative message directing them to the Appointments page.
             Let them know they can manage and search for appointments there.
@@ -365,7 +365,7 @@ async def generate_practice_location_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to practice locations—such as managing clinics, adding new locations, or updating addresses—
             respond with a short and friendly message guiding them to the Practice Location page.
             Mention that they can view, edit, or add locations there.
@@ -404,7 +404,7 @@ async def generate_contact_page_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to contacting support or finding contact information,
             respond with a short and friendly message guiding them to the Contact page.
             Mention that they can find all necessary contact details and support options there.
@@ -443,7 +443,7 @@ async def generate_payer_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to payers—such as managing payer information or adding new payers—
             respond with a short and friendly message guiding them to the Payer page.
             Mention that they can view, edit, or add payer details there.
@@ -482,7 +482,7 @@ async def generate_billing_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to billing—such as managing invoices, payments, or billing settings—
             respond with a short and friendly message guiding them to the Billing page.
             Mention that they can view, edit, or manage all billing-related tasks there.
@@ -521,7 +521,7 @@ async def generate_Eprescription_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform called.
             When an admin makes a query related to e-prescriptions—such as managing e-prescriptions or adding new ones—
             respond with a short and friendly message guiding them to the E-prescription page.
             Mention that they can view, edit, or manage all e-prescription-related tasks there.
@@ -560,7 +560,7 @@ async def generate_admin_settings_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to admin settings—such as managing user roles, permissions, or system settings—
             respond with a short and friendly message guiding them to the Admin Settings page.
             Mention that they can view, edit, or manage all admin-related tasks there.
@@ -599,7 +599,7 @@ async def generate_billing_setting_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform called.
             When an admin makes a query related to billing settings—such as managing billing configurations, payment methods, or invoice settings—
             respond with a short and friendly message guiding them to the Billing Settings page.
             Mention that they can view, edit, or manage all billing-related settings there.
@@ -638,7 +638,7 @@ async def generate_practice_settings_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to practice settings—such as managing practice information, configurations, or preferences—
             respond with a short and friendly message guiding them to the Practice Settings page.
             Mention that they can view, edit, or manage all practice-related settings there.
@@ -677,7 +677,7 @@ async def generate_payment_settings_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to payment settings—such as managing payment methods, configurations, or preferences—
             respond with a short and friendly message guiding them to the Payment Settings page.
             Mention that they can view, edit, or manage all payment-related settings there.
@@ -716,7 +716,7 @@ async def generate_manage_files_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for a telehealth platform called TelepracticePro.
+            You are a helpful AI assistant for a telehealth platform.
             When an admin makes a query related to file management—such as uploading, viewing, or organizing files—
             respond with a short and friendly message guiding them to the Manage Files page.
             Mention that they can perform all file-related tasks there.
@@ -757,7 +757,7 @@ async def generate_client_dashboard_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for TelepracticePro, a telehealth platform for behavioural health services.
+            You are a helpful AI assistant for a telehealth platform for behavioural health services.
             Your role is to assist Clients in navigating to their dashboard.
             Based on their query, provide a short, friendly message guiding them to the main dashboard.
             Clearly confirm their intent and inform them to use the link below for quick access to the dashboard.
@@ -794,7 +794,7 @@ async def generate_client_appointment_summary(
     )
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for TelepracticePro, a telehealth platform for behavioural health services.
+            You are a helpful AI assistant for a telehealth platform for behavioural health services.
             Your role is to assist Clients in navigating to their appointments.
             Based on their query, provide a short, friendly message guiding them to the Appointments page.
             Clearly confirm their intent and inform them that a link will be available for quick access to the appointments page.
@@ -833,7 +833,7 @@ async def generate_client_pratice_search_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for TelepracticePro, a telehealth platform for behavioural health services.
+            You are a helpful AI assistant for a telehealth platform for behavioural health services.
             Your role is to assist Clients in navigating to their practice search.
             Based on their query, provide a short, friendly message guiding them to the Practice Search page.
             Clearly confirm their intent and inform them that a link will be available for quick access to the practice search page.
@@ -862,7 +862,7 @@ async def generate_client_document_summary(
 
     return await openai_generate_response_summary(
         system_prompt="""
-            You are a helpful AI assistant for TelepracticePro, a telehealth platform for behavioural health services.
+            You are a helpful AI assistant for a telehealth platform for behavioural health services.
             Your role is to assist Clients in navigating to their documents.
             Based on their query, provide a short, friendly message guiding them to the Documents page.
             Clearly confirm their intent and inform them that a link will be available for quick access to the documents page.

@@ -11,7 +11,7 @@ load_dotenv()
 # Get API key and index name from environment variables
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
 index_name = os.getenv("PINECONE_INDEX")
-TelepracticePro_ID = os.getenv("TELEPRACTICEPRO_ID")
+# TelepracticePro_ID = os.getenv("TELEPRACTICEPRO_ID")
 
 # Ensure API key is set
 if not pinecone_api_key:
@@ -71,11 +71,11 @@ async def generate_response(user_query: str, organization_id: str, user_id: str,
 
     # Instruction for response generation
     instruction = (
-        "Your name is Telebot."
-        "You are a helpful assistant for TelepracticePro. TelepracticePro is a telehealth platform for behavioural health services. "
+        "Your name is ."
+        "You are a helpful assistant for  a telehealth platform for behavioural health services. "
         "You can answer questions about the platform and its services. "
         "If the user's question is about a specific organization, answer based on their documents. "
-        "If it's about TelepracticePro, answer based on the platform's knowledge base. "
+        "If it's about telehealth, answer based on the platform's knowledge base. "
         "If both, combine relevant details. "
         "Ensure you keep your answers clear and concise."
         "Do not answer any question outside of the scope of the platform."

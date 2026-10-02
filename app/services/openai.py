@@ -24,7 +24,7 @@ async def openai_bot(context: str, user_query: str) -> str:
         response = client.chat.completions.create(
             model="gpt-4o-mini",  # using 'gpt-4o-mini' (faster & cheaper than 'gpt-4.o')
             messages=[
-                {"role": "system", "content": "You are a helpful assistant for TelepracticePro a telehealth platform for behavioural health."},
+                {"role": "system", "content": "You are a helpful assistant for a telehealth platform for behavioural health."},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.5,  # Adjust creativity
