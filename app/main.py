@@ -31,7 +31,7 @@ app.include_router(feedback_router, prefix="/api")
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to TelePracticePro AI Assistant"
+        "message": "Welcome to TeleHealth AI Assistant"
     }
 
 
